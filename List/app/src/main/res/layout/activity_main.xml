@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:weightSum="10"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_weight="2.5"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:id="@+id/viewPagerMain">
+    </androidx.viewpager.widget.ViewPager>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabDots"
+        android:layout_alignParentBottom="true"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:tabBackground="@drawable/tab_selector"
+        android:layout_gravity="center"
+        app:tabGravity="center"
+        app:tabIndicatorHeight="0dp"/>
+
+    <ListView
+        android:layout_weight="6"
+        android:id="@+id/listviewMonAn"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"/>
+</LinearLayout>
