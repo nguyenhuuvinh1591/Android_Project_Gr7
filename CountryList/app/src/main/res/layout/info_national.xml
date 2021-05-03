@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:background="#FF9800"
+    android:orientation="vertical"
+    tools:context=".InfoNational">
+
+    <LinearLayout
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image_national"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp">
+
+            </ImageView>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/name_national"
+            android:layout_weight="6"
+            android:layout_width="0dp"
+            android:gravity="center_vertical"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_height="match_parent">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="0.25"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/danSo_value"
+        android:layout_weight="0.5"
+        android:textSize="20sp"
+        android:layout_marginLeft="25dp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/dienTich_value"
+        android:layout_weight="0.5"
+        android:textSize="20sp"
+        android:layout_marginLeft="25dp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Refresh" />
+
+    <Button
+        android:id="@+id/btnQuayLai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Quay lại">
+
+    </Button>
+
+</LinearLayout>
